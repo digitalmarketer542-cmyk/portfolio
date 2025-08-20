@@ -1,422 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Giveaway Campaign</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            overflow-x: hidden;
-        }
-        
-        .striped-bg {
-            background: repeating-linear-gradient(
-                45deg,
-                #2563eb,
-                #2563eb 20px,
-                #3b82f6 20px,
-                #3b82f6 40px
-            );
-        }
-        
-        .card {
-            transition: all 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .countdown-item {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5);
-        }
-        
-        .btn-glow {
-            animation: glow 2s infinite alternate;
-        }
-        
-        @keyframes glow {
-            from {
-                box-shadow: 0 0 5px -5px #ec4899;
-            }
-            to {
-                box-shadow: 0 0 20px 5px #ec4899;
-            }
-        }
-        
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            opacity: 0.7;
-            animation: confetti-fall linear forwards;
-        }
-        
-        @keyframes confetti-fall {
-            0% {
-                transform: translateY(-100px) rotate(0deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(calc(100vh + 100px)) rotate(720deg);
-                opacity: 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tayyab | Digital Marketing Specialist & Expert in Pakistan</title>
+  <meta name="description" content="Tayyab is a Digital Marketing Expert in Pakistan and Global Digital Marketing Specialist providing SEO and Marketing Solutions, Google Ads, Social Media, Email Marketing, and Analytics to grow traffic, leads, and sales."/>
+  <link rel="canonical" href="https://example.com/"/>
+  <meta property="og:title" content="Tayyab | Digital Marketing Specialist & Expert"/>
+  <meta property="og:description" content="Result-driven SEO and marketing solutions for growth. Work with a trusted Digital Marketing Expert in Pakistan serving global clients."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://example.com/og-image.jpg"/>
+  <meta property="og:url" content="https://example.com/"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Tayyab | Digital Marketing Specialist & Expert"/>
+  <meta name="twitter:description" content="SEO, Google Ads, Social Media, Email Marketing, and Analytics to grow traffic, leads, and sales."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --primary:#0A66C2;   /* Professional Blue */
+      --secondary:#FF914D; /* Warm Orange */
+      --bg:#FFFFFF;        /* White */
+      --text:#1E1E1E;      /* Dark Charcoal */
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;}
+    .shadow-soft{box-shadow:0 10px 30px rgba(10,102,194,.08);}
+    .card{background:#fff;border:1px solid rgba(30,30,30,.08);border-radius:16px;}
+    .tag{border:1px solid rgba(30,30,30,.12);background:#fff;border-radius:9999px;}
+    .cta{background:var(--primary);color:#fff;}
+    .cta:hover{background:#0959a9;}
+    .outline-cta{border:1px solid var(--primary);color:var(--primary);background:#fff;}
+    .outline-cta:hover{background:rgba(10,102,194,.06);}
+    .heading{color:var(--primary);}
+    .icon-accent{color:var(--secondary);}
+    .badge-orange{color:var(--secondary); background:rgba(255,145,77,.15); border:1px solid rgba(255,145,77,.35);}
+    .badge-blue{color:var(--primary); background:rgba(10,102,194,.08); border:1px solid rgba(10,102,194,.25);}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Tayyab",
+    "jobTitle":"Digital Marketing Specialist",
+    "description":"Digital Marketing Expert in Pakistan. Global Digital Marketing Specialist delivering SEO and Marketing Solutions, Google Ads, Social Media, Email, and Analytics.",
+    "email":"mailto:digitalprotayyab@gmail.com",
+    "telephone":"+923237619177",
+    "url":"https://example.com/",
+    "sameAs":[
+      "https://www.linkedin.com/in/hafiz-tayyab-6a77b9368/",
+      "https://wa.me/923237619177"
+    ]
+  }
+  </script>
 </head>
-<body class="bg-gray-50">
-    <!-- Confetti Animation -->
-    <div id="confetti-container" class="fixed inset-0 pointer-events-none z-10"></div>
+<body class="min-h-screen bg-white text-[#1E1E1E]">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-3" aria-label="Go to home">
+          <div class="w-9 h-9 rounded-xl grid place-items-center" style="background:rgba(10,102,194,.08); border:1px solid rgba(10,102,194,.25);">
+            <!-- Spark icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-[var(--primary)]">
+              <path d="M12 2l1.8 4.8L19 9l-4.4 2.2L12 16l-2.6-4.8L5 9l5.2-2.2L12 2z" stroke="currentColor" stroke-width="1.4" fill="currentColor"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs leading-none text-neutral-500">Digital Marketing Specialist</p>
+            <p class="font-bold tracking-tight">Tayyab</p>
+          </div>
+        </a>
 
-    <!-- Hero Section -->
-    <section class="striped-bg relative overflow-hidden">
-        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-block bg-white rounded-full px-6 py-2 mb-6 text-blue-600 font-bold animate-bounce">
-                    Limited Time Offer!
-                </div>
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                    Claim Your $100 Digital Surprise!
-                </h1>
-                <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
-                    Select your favorite reward below and join thousands of happy winners!
-                </p>
-            </div>
-        </div>
-        
-        <!-- Decorative Elements -->
-        <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 50L48 45.7C96 41.3 192 32.7 288 29.2C384 25.7 480 27.3 576 33.3C672 39.3 768 49.7 864 58.3C960 67 1056 74 1152 70.8C1248 67.7 1344 54.3 1392 47.7L1440 41V101H1392C1344 101 1248 101 1152 101C1056 101 960 101 864 101C768 101 672 101 576 101C480 101 384 101 288 101C192 101 96 101 48 101H0V50Z" fill="white"/>
-        </svg>
-        
-        <!-- Floating Gift Icons -->
-        <svg class="absolute top-20 left-10 w-16 h-16 animate-bounce" viewBox="0 0 24 24" fill="#FCD34D">
-            <path d="M20,7h-1.209C19.4,6.55,20,5.839,20,5c0-1.654-1.346-3-3-3c-1.535,0-2.788,1.163-2.973,2.651C13.91,4.241,13.866,4,13.667,4H10.333C10.134,4,10.09,4.241,9.973,4.651C9.788,3.163,8.535,2,7,2C5.346,2,4,3.346,4,5c0,0.839,0.6,1.55,1.209,2H4c-1.103,0-2,0.897-2,2v2c0,0.552,0.447,1,1,1h7v7c0,0.552,0.447,1,1,1h2c0.553,0,1-0.448,1-1v-7h7c0.553,0,1-0.448,1-1V9C22,7.897,21.103,7,20,7z M17,4c0.552,0,1,0.449,1,1s-0.448,1-1,1h-2c0-1.103,0.897-2,2-2z M7,4c1.103,0,2,0.897,2,2H7C6.448,6,6,5.551,6,5S6.448,4,7,4z M11,10H4V9c0-0.551,0.449-1,1-1h6V10z M13,10V8h6c0.551,0,1,0.449,1,1v1H13z"/>
-        </svg>
-        
-        <svg class="absolute top-40 right-20 w-12 h-12 animate-pulse" viewBox="0 0 24 24" fill="#EC4899">
-            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/>
-            <path d="M13,7h-2v5H7v2h4v-5h2V7z"/>
-        </svg>
-    </section>
+        <nav class="hidden md:flex items-center gap-6 text-sm" aria-label="Primary">
+          <a href="#about" class="hover:text-[var(--primary)]">About</a>
+          <a href="#skills" class="hover:text-[var(--primary)]">Skills</a>
+          <a href="#problems" class="hover:text-[var(--primary)]">Problems</a>
+          <a href="#solutions" class="hover:text-[var(--primary)]">Solutions</a>
+          <a href="#portfolio" class="hover:text-[var(--primary)]">Case Studies</a>
+          <a href="#testimonials" class="hover:text-[var(--primary)]">Testimonials</a>
+          <a href="#why" class="hover:text-[var(--primary)]">Why Me</a>
+          <a href="#contact" class="px-4 py-2 rounded-lg cta font-semibold shadow-soft">Work With Me</a>
+        </nav>
 
-    <!-- Countdown Section -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">Hurry! Offer Ends Soon</h2>
-                <p class="text-gray-600 mt-2">Don't miss your chance to claim your reward</p>
-            </div>
-            
-            <div class="flex justify-center space-x-4 md:space-x-8">
-                <div class="countdown-item w-16 h-16 md:w-24 md:h-24 rounded-lg flex flex-col items-center justify-center text-white">
-                    <span id="days" class="text-2xl md:text-4xl font-bold">00</span>
-                    <span class="text-xs md:text-sm">Days</span>
-                </div>
-                <div class="countdown-item w-16 h-16 md:w-24 md:h-24 rounded-lg flex flex-col items-center justify-center text-white">
-                    <span id="hours" class="text-2xl md:text-4xl font-bold">00</span>
-                    <span class="text-xs md:text-sm">Hours</span>
-                </div>
-                <div class="countdown-item w-16 h-16 md:w-24 md:h-24 rounded-lg flex flex-col items-center justify-center text-white">
-                    <span id="minutes" class="text-2xl md:text-4xl font-bold">00</span>
-                    <span class="text-xs md:text-sm">Minutes</span>
-                </div>
-                <div class="countdown-item w-16 h-16 md:w-24 md:h-24 rounded-lg flex flex-col items-center justify-center text-white">
-                    <span id="seconds" class="text-2xl md:text-4xl font-bold">00</span>
-                    <span class="text-xs md:text-sm">Seconds</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reward Cards Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800">Choose Your Digital Reward</h2>
-                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Select one of these amazing digital rewards worth $100. Limited quantity available!</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Amazon Card -->
-                <div class="card bg-white rounded-xl overflow-hidden shadow-lg border-2 border-blue-500 cursor-pointer" onclick="selectCard(this, 'Amazon Gift Card')">
-                    <div class="h-40 bg-white flex items-center justify-center">
-                     <img src="data:image/jpeg;base64,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" alt="Amazon Gift Card" class="h-full object-contain" />
-                   </div>
-
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Amazon Gift Card</h3>
-                        <p class="text-gray-600 mb-4">Shop millions of products with this $100 Amazon gift card.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-blue-600 font-bold">$100 Value</span>
-                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Most Popular</span>
-                        </div>
-                    </div>
-                </div>
-                
-              <!-- Gaming Card -->
-<div class="card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="selectCard(this, 'Gaming Gift Card')">
-  <div class="h-40 bg-white flex items-center justify-center">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp03yFuLWeVGSamVLaWofh5c_Gm00SQygMSg&s" alt="Gaming Gift Card" class="h-full object-contain" />
-  </div>
-  <div class="p-6">
-    <h3 class="text-xl font-bold text-gray-800 mb-2">Gaming Gift Card</h3>
-    <p class="text-gray-600 mb-4">Get games, add-ons, and more with this $100 gaming gift card.</p>
-    <div class="flex items-center justify-between">
-      <span class="text-purple-600 font-bold">$100 Value</span>
-      <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Gamer's Choice</span>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-black/10" aria-label="Open menu">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-</div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-black/5 bg-white">
+      <div class="px-4 py-4 space-y-2 text-sm">
+        <a href="#about" class="block py-2 hover:text-[var(--primary)]">About</a>
+        <a href="#skills" class="block py-2 hover:text-[var(--primary)]">Skills</a>
+        <a href="#problems" class="block py-2 hover:text-[var(--primary)]">Problems</a>
+        <a href="#solutions" class="block py-2 hover:text-[var(--primary)]">Solutions</a>
+        <a href="#portfolio" class="block py-2 hover:text-[var(--primary)]">Case Studies</a>
+        <a href="#testimonials" class="block py-2 hover:text-[var(--primary)]">Testimonials</a>
+        <a href="#why" class="block py-2 hover:text-[var(--primary)]">Why Me</a>
+        <a href="#contact" class="block py-2 text-center rounded-lg cta font-semibold">Work With Me</a>
+      </div>
+    </div>
+  </header>
 
-                
-                <!-- Entertainment Card -->
-                <div class="card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="selectCard(this, 'Entertainment Bundle')">
-                   <div class="h-40 bg-white flex items-center justify-center">
-    <img src="data:image/jpeg;base64,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">
-  </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Entertainment Bundle</h3>
-                        <p class="text-gray-600 mb-4">Enjoy movies, music, and shows with this $100 entertainment bundle.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-pink-600 font-bold">$100 Value</span>
-                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Trending</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Food Delivery Card -->
-                <div class="card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="selectCard(this, 'Food Delivery Credit')">
-                   <div class="h-40 bg-white flex items-center justify-center">
-    <img src="https://dyme.earth/wp-content/uploads/2023/05/GRBHUB-US.png" alt="Gaming Gift Card" class="h-full object-contain" />
-  </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Food Delivery Credit</h3>
-                        <p class="text-gray-600 mb-4">Enjoy meals from your favorite restaurants with $100 delivery credit.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-amber-600 font-bold">$100 Value</span>
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Delicious</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Online Shopping Card -->
-                <div class="card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="selectCard(this, 'Online Shopping Spree')">
-                    <div class="h-40 bg-white flex items-center justify-center">
-    <img src="https://static.vecteezy.com/system/resources/previews/033/851/442/non_2x/gift-card-and-promotion-happy-people-doing-online-shopping-with-discount-coupon-and-gift-certificate-flat-modern-illustration-vector.jpg" alt="Gaming Gift Card" class="h-full object-contain" />
-  </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Online Shopping Spree</h3>
-                        <p class="text-gray-600 mb-4">Shop your favorite brands with this $100 online shopping credit.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-emerald-600 font-bold">$100 Value</span>
-                            <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Fashion Lovers</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Tech Gadget Card -->
-                <div class="card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="selectCard(this, 'Tech Gadget Voucher')">
-                    <div class="h-40 bg-white flex items-center justify-center">
-    <img src="data:image/jpeg;base64,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"  alt="Gaming Gift Card" class="h-full object-contain" />
-  </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tech Gadget Voucher</h3>
-                        <p class="text-gray-600 mb-4">Get the latest tech gadgets with this $100 tech voucher.</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-cyan-600 font-bold">$100 Value</span>
-                            <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Lovers</span>
-                        </div>
-                    </div>
-                </div>
+  <main id="home">
+    <!-- Hero -->
+    <section class="relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <span class="inline-flex items-center gap-2 px-3 py-1 tag text-[var(--primary)]">
+              <span class="w-1.5 h-1.5 rounded-full" style="background:var(--secondary);"></span>
+              Available for new projects
+            </span>
+            <h1 class="mt-5 text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight leading-tight">
+              Tayyab
+              <span class="block heading">Digital Marketing Specialist & Expert</span>
+            </h1>
+            <p class="mt-5 text-lg text-neutral-700 max-w-2xl">
+              Helping businesses grow digitally with result-driven marketing strategies.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#contact" class="px-6 py-3 rounded-xl cta font-semibold shadow-soft">Work With Me</a>
+              <a href="#portfolio" class="px-6 py-3 rounded-xl outline-cta font-semibold">See Case Studies</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Form Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-xl mx-auto bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-blue-100">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-gray-800">Claim Your Reward Now</h2>
-                    <p class="text-gray-600 mt-2" id="selected-reward-text">Complete the form below to get your $100 digital reward</p>
-                </div>
-                
-                <form id="reward-form" class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your full name" required>
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email address" required>
-                    </div>
-                    
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number (Optional)</label>
-                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your phone number">
-                    </div>
-                    
-                    <div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transition duration-300 btn-glow">
-                            Get My $100 Reward
-                        </button>
-                    </div>
-                </form>
-                
-                <div class="mt-6 text-center text-sm text-gray-500">
-                    <p>By submitting this form, you agree to our <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a> and <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.</p>
-                    <p class="mt-2">*For demonstration purposes only. This is a sample marketing campaign.</p>
-                </div>
+            <div class="mt-8 grid grid-cols-3 gap-6 text-center">
+              <div class="card py-4">
+                <p class="text-2xl font-extrabold heading">200%</p>
+                <p class="text-xs text-neutral-500">Organic Traffic Growth</p>
+              </div>
+              <div class="card py-4">
+                <p class="text-2xl font-extrabold heading">5x</p>
+                <p class="text-xs text-neutral-500">ROAS on Ads</p>
+              </div>
+              <div class="card py-4">
+                <p class="text-2xl font-extrabold heading">40%</p>
+                <p class="text-xs text-neutral-500">Email Open Rate</p>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- Success Modal -->
-    <div id="success-modal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative bg-white rounded-lg max-w-md w-full mx-4 p-8 shadow-2xl">
-            <div class="text-center">
-                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          <div class="relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none card p-6">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg grid place-items-center" style="background:rgba(255,145,77,.15);">
+                    <!-- Graph icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="icon-accent">
+                      <path d="M4 20V6m0 0l4 3 4-6 4 4 4-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 20h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold">Growth Snapshot</p>
+                    <p class="text-xs text-neutral-500">Simple progress view</p>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-800 mb-2">Congratulations!</h3>
-                <p class="text-gray-600 mb-6">Your reward claim has been submitted successfully. Check your email for next steps.</p>
-                <button id="close-modal" class="bg-blue-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
-                    Close
-                </button>
+                <span class="text-xs font-semibold px-2 py-1 rounded-full badge-orange">+68% MoM</span>
+              </div>
+              <div class="mt-6">
+                <!-- Simple bars -->
+                <div class="grid grid-cols-12 gap-2 items-end h-36">
+                  <div class="rounded-md" style="background:rgba(10,102,194,.25); height:18%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.3); height:35%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.4); height:45%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.5); height:55%"></div>
+                  <div class="rounded-md" style="background:rgba(255,145,77,.45); height:60%"></div>
+                  <div class="rounded-md" style="background:rgba(255,145,77,.55); height:72%"></div>
+                  <div class="rounded-md" style="background:rgba(255,145,77,.65); height:78%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.65); height:85%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.7); height:88%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.75); height:92%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.8); height:95%"></div>
+                  <div class="rounded-md" style="background:rgba(10,102,194,.9); height:98%"></div>
+                </div>
+                <div class="mt-4 flex items-center justify-between text-xs text-neutral-500">
+                  <span>SEO</span><span>Social</span><span>Ads</span><span>Email</span><span>Overall</span>
+                </div>
+              </div>
             </div>
+
+            <div class="absolute -bottom-6 -left-6 w-36 h-36 rounded-2xl card grid place-items-center rotate-6">
+              <!-- Target icon -->
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" class="text-[var(--primary)]">
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.4"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M12 4V2M20 12h2M12 22v2M2 12H0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- About (SEO-optimized) -->
+    <section id="about" class="py-16 sm:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">About Me</h2>
+        <div class="mt-6 grid lg:grid-cols-3 gap-10 items-start">
+          <div class="lg:col-span-2">
+            <p class="text-neutral-800">
+              I’m Tayyab, a passionate Digital Marketing Expert with proven results. As a Digital Marketing Expert in Pakistan and a Global Digital Marketing Specialist, I help businesses attract qualified traffic, convert visitors into leads, and grow sales with simple, effective strategies.
+            </p>
+            <p class="mt-4 text-neutral-800">
+              My work is practical and problem‑solving. I listen to your goals, find the gaps, and deliver real SEO and Marketing Solutions that bring steady growth—not just temporary spikes. You get a clear plan, focused execution, and transparent reports.
+            </p>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-bold text-xl heading">What you can expect</h3>
+            <ul class="mt-4 space-y-3 text-neutral-800">
+              <li class="flex gap-3"><span class="icon-accent">✓</span> Clear strategy aligned with your goals</li>
+              <li class="flex gap-3"><span class="icon-accent">✓</span> Measurable KPIs and regular updates</li>
+              <li class="flex gap-3"><span class="icon-accent">✓</span> Fast communication and on-time delivery</li>
+              <li class="flex gap-3"><span class="icon-accent">✓</span> Real business impact and ROI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">Core Skills</h2>
+        <p class="mt-3 text-neutral-700">Practical capabilities that turn clicks into customers.</p>
+
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Bullet list cards -->
+          <div class="card p-6">
+            <h3 class="font-semibold">SEO</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• On-page, Off-page, Technical</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Social Media Marketing</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Facebook, Instagram, LinkedIn, TikTok</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Google Ads & PPC Campaigns</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Search, Performance Max, Remarketing</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Content Strategy & Copywriting</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Messaging, funnels, and landing pages</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Guest Posting & High-Quality Backlinks</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Authority building and outreach</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Content Writing & Blogging</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Helpful content that ranks and converts</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Email Marketing Automation</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Sequences, nurturing, and re‑engagement</li>
+            </ul>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Analytics & Reporting</h3>
+            <ul class="mt-3 space-y-2 text-neutral-800">
+              <li>• Dashboards, insights, and decisions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Problems -->
+    <section id="problems" class="py-16 sm:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">Common Client Problems</h2>
+        <div class="mt-6 grid lg:grid-cols-2 gap-8">
+          <ul class="space-y-3 text-neutral-900">
+            <li class="flex gap-3"><span class="icon-accent">•</span> Low website traffic and poor Google ranking.</li>
+            <li class="flex gap-3"><span class="icon-accent">•</span> Social media without real engagement.</li>
+            <li class="flex gap-3"><span class="icon-accent">•</span> High marketing costs with low ROI.</li>
+            <li class="flex gap-3"><span class="icon-accent">•</span> No clear digital strategy.</li>
+            <li class="flex gap-3"><span class="icon-accent">•</span> Difficulty generating leads and consistent sales.</li>
+          </ul>
+          <div class="card p-6">
+            <h3 class="font-semibold heading">What this means</h3>
+            <p class="mt-2 text-neutral-800">Without a focused plan, activity doesn’t become revenue. I build a clear path from visibility to conversions so you spend less and earn more.</p>
+            <a href="#solutions" class="mt-4 inline-block px-5 py-3 rounded-xl cta font-semibold shadow-soft">See the Solution</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">My Promise: Clear, Effective Solutions</h2>
+        <p class="mt-3 text-neutral-700 max-w-3xl">I solve real problems with practical steps and honest reporting. You get strategy, execution, and measurable results.</p>
+
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6"><h3 class="font-semibold">Customized Digital Strategies</h3><p class="mt-2 text-sm text-neutral-700">Plans tailored to your goals, industry, and budget.</p></div>
+          <div class="card p-6"><h3 class="font-semibold">SEO for Long‑Term Growth</h3><p class="mt-2 text-sm text-neutral-700">Technical fixes, content, and backlinks that rank.</p></div>
+          <div class="card p-6"><h3 class="font-semibold">Social Media Engagement</h3><p class="mt-2 text-sm text-neutral-700">Campaigns that build trust and community.</p></div>
+          <div class="card p-6"><h3 class="font-semibold">Google Ads & PPC</h3><p class="mt-2 text-sm text-neutral-700">Targeted traffic and conversions at lower cost.</p></div>
+          <div class="card p-6"><h3 class="font-semibold">Email Marketing</h3><p class="mt-2 text-sm text-neutral-700">Nurturing sequences that turn leads into buyers.</p></div>
+          <div class="card p-6"><h3 class="font-semibold">Content & Backlinks</h3><p class="mt-2 text-sm text-neutral-700">Authority building with quality writing and outreach.</p></div>
+          <div class="card p-6 sm:col-span-2 lg:col-span-3"><h3 class="font-semibold">Clear Reports & Insights</h3><p class="mt-2 text-sm text-neutral-700">Simple dashboards and updates so you always know what’s working.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Case Studies -->
+    <section id="portfolio" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">Case Studies</h2>
+          <p class="text-neutral-700 max-w-2xl">Real examples with clear numbers. Each project shows the goal, actions, and outcomes.</p>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+          <article class="card p-6 hover:shadow-soft transition">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">E‑commerce SEO</h3>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full badge-blue">6 months</span>
+            </div>
+            <p class="mt-2 text-sm text-neutral-700">Audit, technical SEO, and content plan across key categories.</p>
+            <ul class="mt-4 space-y-2 text-neutral-900 text-sm">
+              <li class="flex gap-2"><span class="icon-accent">•</span> 200% organic traffic growth</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> 120+ top 10 keywords</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> 35% lower bounce rate</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 hover:shadow-soft transition">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Social Media Campaign</h3>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full badge-blue">8 weeks</span>
+            </div>
+            <p class="mt-2 text-sm text-neutral-700">Creative content, influencer support, and community management.</p>
+            <ul class="mt-4 space-y-2 text-neutral-900 text-sm">
+              <li class="flex gap-2"><span class="icon-accent">•</span> 100K+ reach</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> 50K+ engagements</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> 2.1x follower growth</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 hover:shadow-soft transition">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Google Ads</h3>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full badge-blue">90 days</span>
+            </div>
+            <p class="mt-2 text-sm text-neutral-700">Account restructure, keyword match types, and creative testing.</p>
+            <ul class="mt-4 space-y-2 text-neutral-900 text-sm">
+              <li class="flex gap-2"><span class="icon-accent">•</span> 5x ROAS</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> 40% lower cost per conversion</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> Higher lead quality</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 hover:shadow-soft transition">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-lg">Email Marketing</h3>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full badge-blue">4 weeks</span>
+            </div>
+            <p class="mt-2 text-sm text-neutral-700">Segmentation, copy refresh, and A/B testing on subject lines.</p>
+            <ul class="mt-4 space-y-2 text-neutral-900 text-sm">
+              <li class="flex gap-2"><span class="icon-accent">•</span> 40% open rate</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> 15% CTR</li>
+              <li class="flex gap-2"><span class="icon-accent">•</span> Higher repeat purchases</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (fixed four cards) -->
+    <section id="testimonials" class="py-16 sm:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">What Clients Say</h2>
+        </div>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <!-- PK 1 -->
+          <article class="card p-6">
+            <div class="flex items-center gap-2 text-[var(--secondary)]">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.26 6.96H21l-5.38 3.9L16.9 20 12 16.8 7.1 20l1.28-7.14L3 8.96h6.74L12 2z"/></svg>
+              <span class="font-semibold text-sm">Client Review</span>
+            </div>
+            <blockquote class="mt-3 text-neutral-900">⭐ "Tayyab helped my clothing brand in Lahore rank on Google and increase sales by 3x in just 5 months. Truly the best SEO expert in Pakistan."</blockquote>
+            <footer class="mt-3 text-sm text-neutral-600">— Ahmad, Lahore, Pakistan</footer>
+          </article>
+
+          <!-- PK 2 -->
+          <article class="card p-6">
+            <div class="flex items-center gap-2 text-[var(--secondary)]">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.26 6.96H21l-5.38 3.9L16.9 20 12 16.8 7.1 20l1.28-7.14L3 8.96h6.74L12 2z"/></svg>
+              <span class="font-semibold text-sm">Client Review</span>
+            </div>
+            <blockquote class="mt-3 text-neutral-900">⭐ "Professional and reliable! He managed our social media campaigns and delivered amazing engagement. Highly recommended."</blockquote>
+            <footer class="mt-3 text-sm text-neutral-600">— Sara, Karachi, Pakistan</footer>
+          </article>
+
+          <!-- Global 1 -->
+          <article class="card p-6">
+            <div class="flex items-center gap-2 text-[var(--secondary)]">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.26 6.96H21l-5.38 3.9L16.9 20 12 16.8 7.1 20l1.28-7.14L3 8.96h6.74L12 2z"/></svg>
+              <span class="font-semibold text-sm">Client Review</span>
+            </div>
+            <blockquote class="mt-3 text-neutral-900">⭐ "We hired Tayyab for Google Ads, and he gave us 5x ROI. His reporting and transparency are world-class."</blockquote>
+            <footer class="mt-3 text-sm text-neutral-600">— David, New York, USA</footer>
+          </article>
+
+          <!-- Global 2 -->
+          <article class="card p-6">
+            <div class="flex items-center gap-2 text-[var(--secondary)]">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.26 6.96H21l-5.38 3.9L16.9 20 12 16.8 7.1 20l1.28-7.14L3 8.96h6.74L12 2z"/></svg>
+              <span class="font-semibold text-sm">Client Review</span>
+            </div>
+            <blockquote class="mt-3 text-neutral-900">⭐ "Tayyab is more than a marketer, he is a growth partner. Our website traffic and leads improved drastically."</blockquote>
+            <footer class="mt-3 text-sm text-neutral-600">— Emily, London, UK</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section id="why" class="py-16 sm:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">Why Choose Me</h2>
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card p-6">
+            <h3 class="font-semibold">Solution‑oriented approach</h3>
+            <p class="mt-2 text-sm text-neutral-700">Focused on outcomes, not vanity metrics.</p>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Customized strategies</h3>
+            <p class="mt-2 text-sm text-neutral-700">Every plan tailored to your goals and budget.</p>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Transparent reporting</h3>
+            <p class="mt-2 text-sm text-neutral-700">Simple updates so you always know what’s working.</p>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-semibold">Long‑term growth</h3>
+            <p class="mt-2 text-sm text-neutral-700">Quick wins plus systems that sustain results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 sm:py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="card p-8">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight heading">Let’s grow your business together</h2>
+              <p class="mt-3 text-neutral-700">Contact me today and get digital solutions that really work.</p>
+
+              <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <div class="card p-4">
+                  <p class="text-neutral-500">📧 Email</p>
+                  <a href="mailto:digitalprotayyab@gmail.com" class="mt-1 inline-block font-semibold hover:text-[var(--primary)]">digitalprotayyab@gmail.com</a>
+                </div>
+                <div class="card p-4">
+                  <p class="text-neutral-500">📞 Phone</p>
+                  <a href="tel:+923237619177" class="mt-1 inline-block font-semibold hover:text-[var(--primary)]">+92 323 7619177</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3 shrink-0 w-full md:w-auto">
+              <a href="mailto:digitalprotayyab@gmail.com" class="px-6 py-3 rounded-xl cta font-semibold text-center shadow-soft" aria-label="Send an email to digitalprotayyab@gmail.com">Email Me</a>
+              <a href="tel:+923237619177" class="px-6 py-3 rounded-xl outline-cta font-semibold text-center" aria-label="Call +92 323 7619177">Call: +92 323 7619177</a>
+
+              <!-- Social buttons with official icons -->
+              <a href="https://www.linkedin.com/in/hafiz-tayyab-6a77b9368/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl outline-cta font-semibold text-center inline-flex items-center justify-center gap-2" aria-label="Open LinkedIn profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="text-[var(--primary)]">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.2 2.32-2.47 4.78-2.47 5.11 0 6.05 3.36 6.05 7.73V24h-5v-7.4c0-1.76-.03-4.02-2.45-4.02-2.45 0-2.82 1.9-2.82 3.89V24h-5V8z"/>
+                </svg>
+                LinkedIn
+              </a>
+
+              <a href="https://wa.me/923237619177" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl outline-cta font-semibold text-center inline-flex items-center justify-center gap-2" aria-label="Open WhatsApp chat">
+                <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" class="text-[var(--primary)]">
+                  <path d="M19.11 17.64c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.12-.41-2.13-1.3-.79-.7-1.32-1.57-1.47-1.84-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.74.34-.25.27-.97.95-.97 2.31s.99 2.68 1.13 2.86c.14.18 1.95 2.98 4.73 4.18.66.29 1.18.46 1.59.59.67.21 1.28.18 1.76.11.54-.08 1.6-.65 1.83-1.28.23-.63.23-1.16.16-1.28-.07-.11-.25-.18-.52-.32zM16.02 3.2C9.62 3.2 4.4 8.41 4.4 14.8c0 2.56.81 4.94 2.2 6.86L5.3 28.8l7.34-1.93c1.84 1 3.94 1.57 6.18 1.57 6.39 0 11.61-5.21 11.61-11.61S22.41 3.2 16.02 3.2zm0 20.98c-1.98 0-3.82-.58-5.37-1.57l-.38-.24-4.36 1.14 1.16-4.25-.25-.39a10.5 10.5 0 1119.58-5.3 10.5 10.5 0 01-10.38 10.61z"/>
+                </svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+          <p class="mt-4 text-xs text-neutral-600 text-center">Prefer a quick chat? Use the LinkedIn or WhatsApp buttons above.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black/5 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-neutral-600">© <span id="year"></span> Tayyab. All rights reserved.</p>
+      <div class="flex items-center gap-3 text-sm">
+        <a href="#about" class="hover:text-[var(--primary)]">About</a>
+        <span class="text-neutral-400">•</span>
+        <a href="#portfolio" class="hover:text-[var(--primary)]">Case Studies</a>
+        <span class="text-neutral-400">•</span>
+        <a href="#contact" class="hover:text-[var(--primary)]">Contact</a>
+      </div>
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Digital Rewards</h3>
-                    <p class="text-gray-400">Bringing you the best digital rewards and promotions.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Support</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
-                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Legal</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
-                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition">Disclaimer</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 Digital Rewards Campaign. All rights reserved.</p>
-                <p class="mt-2 text-sm">This is a sample marketing campaign for demonstration purposes only.</p>
-            </div>
-        </div>
-    </footer>
+  <!-- Floating CTA -->
+  <a href="#contact" class="fixed bottom-5 right-5 md:right-8 md:bottom-8 px-5 py-3 rounded-full cta font-semibold shadow-soft">
+    Work With Me
+  </a>
 
-    <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const endDate = new Date();
-            endDate.setDate(endDate.getDate() + 2); // 2 days from now
-            endDate.setHours(endDate.getHours() + 12); // Plus 12 hours
-            
-            const now = new Date().getTime();
-            const distance = endDate - now;
-            
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-        
-        // Card Selection
-        let selectedReward = null;
-        
-        function selectCard(card, rewardName) {
-            // Remove border from all cards
-            document.querySelectorAll('.card').forEach(c => {
-                c.classList.remove('border-2', 'border-blue-500');
-            });
-            
-            // Add border to selected card
-            card.classList.add('border-2', 'border-blue-500');
-            
-            // Update selected reward
-            selectedReward = rewardName;
-            document.getElementById('selected-reward-text').textContent = `Complete the form below to get your ${rewardName} worth $100`;
-            
-            // Scroll to form
-            document.querySelector('#reward-form').scrollIntoView({ behavior: 'smooth' });
-            
-            // Create confetti effect
-            createConfetti();
-        }
-        
-        // Form Submission
-        document.getElementById('reward-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Show success modal
-            document.getElementById('success-modal').classList.remove('hidden');
-            
-            // Create more confetti
-            createConfetti();
-        });
-        
-        // Close Modal
-        document.getElementById('close-modal').addEventListener('click', function() {
-            document.getElementById('success-modal').classList.add('hidden');
-        });
-        
-        // Confetti Animation
-        function createConfetti() {
-            const confettiContainer = document.getElementById('confetti-container');
-            confettiContainer.innerHTML = '';
-            
-            const colors = ['#3b82f6', '#ec4899', '#8b5cf6', '#10b981', '#f59e0b'];
-            
-            for (let i = 0; i < 100; i++) {
-                const confetti = document.createElement('div');
-                confetti.className = 'confetti';
-                confetti.style.left = Math.random() * 100 + 'vw';
-                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                confetti.style.width = Math.random() * 10 + 5 + 'px';
-                confetti.style.height = Math.random() * 10 + 5 + 'px';
-                confetti.style.opacity = Math.random() + 0.5;
-                confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
-                
-                confettiContainer.appendChild(confetti);
-                
-                // Remove confetti after animation
-                setTimeout(() => {
-                    confetti.remove();
-                }, 5000);
-            }
-        }
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9652bb2d277fc910',t:'MTc1MzUyMDY4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    }
+
+    // Testimonials carousel
+    const testimonials = [
+      {
+        text: "Tayyab helped my clothing brand in Lahore rank on Google and increase sales by 3x in just 5 months. Truly the best SEO expert in Pakistan.",
+        author: "— Ahmad, Pakistan"
+      },
+      {
+        text: "Professional and reliable! He managed our social media campaigns and delivered amazing engagement. Highly recommended.",
+        author: "— Sara, Karachi, Pakistan"
+      },
+      {
+        text: "We hired Tayyab for Google Ads, and he gave us 5x ROI. His reporting and transparency are world-class.",
+        author: "— David, USA"
+      },
+      {
+        text: "Tayyab is more than a marketer, he is a growth partner. Our website traffic and leads improved drastically.",
+        author: "— Emily, UK"
+      }
+    ];
+    let tIndex = 0;
+    const tText = document.getElementById('testimonialText');
+    const tAuthor = document.getElementById('testimonialAuthor');
+    const prevBtn = document.getElementById('prevTest');
+    const nextBtn = document.getElementById('nextTest');
+
+    function updateTestimonial(i) {
+      const t = testimonials[i];
+      tText.textContent = "“" + t.text + "”";
+      tAuthor.textContent = t.author;
+    }
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        tIndex = (tIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonial(tIndex);
+      });
+      nextBtn.addEventListener('click', () => {
+        tIndex = (tIndex + 1) % testimonials.length;
+        updateTestimonial(tIndex);
+      });
+    }
+    updateTestimonial(tIndex);
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'971a1df7d6cf9083',t:'MTc1NTYxMTM5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
